@@ -1,0 +1,31 @@
+{
+    "name": "react-new-repo",
+    "version": "0.1.0",
+    "homepage": "http://Jitendra-Pathak.github.io/react-repo",
+    "description": "Two test React components",
+    "author": "Jitendra Pathak",
+    "keywords": [
+        "react",
+        "components",
+        "ui"
+    ],
+    "private": false,
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "files": [
+        "dist",
+        "README.md"
+    ],
+    "dependencies": {
+        "@babel/polyfill": "^7.12.1"
+    },
+    "scripts": {
+        "build": "rm -rf dist && NODE_ENV=production babel src/ --out-dir dist --copy-files"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.19.3",
+        "@babel/core": "^7.19.3",
+        "@babel/preset-env": "^7.19.3",
+        "@babel/preset-react": "^7.18.6"
+    }
+}
