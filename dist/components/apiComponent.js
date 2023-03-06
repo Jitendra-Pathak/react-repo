@@ -56,7 +56,7 @@ var ApiComp = function ApiComp() {
       setData(res);
     });
   }, []);
-  return /*#__PURE__*/_react["default"].createElement("div", {
+  return data ? /*#__PURE__*/_react["default"].createElement("div", {
     className: "apiComp"
   }, /*#__PURE__*/_react["default"].createElement("p", null, data === null || data === void 0 ? void 0 : data.date, " @@ ", data === null || data === void 0 ? void 0 : data.id, " "), /*#__PURE__*/_react["default"].createElement("p", null, data === null || data === void 0 ? void 0 : (_data$resource = data.resource) === null || _data$resource === void 0 ? void 0 : _data$resource.dataset, " @@ ", data === null || data === void 0 ? void 0 : (_data$resource2 = data.resource) === null || _data$resource2 === void 0 ? void 0 : _data$resource2.planet, " "), /*#__PURE__*/_react["default"].createElement(_Badge["default"], {
     value: data === null || data === void 0 ? void 0 : data.service_version
@@ -64,7 +64,7 @@ var ApiComp = function ApiComp() {
     src: data === null || data === void 0 ? void 0 : data.url,
     width: 200,
     height: 200
-  }));
+  })) : /*#__PURE__*/_react["default"].createElement("div", null, "No data");
 };
 
 var _default = ApiComp;
