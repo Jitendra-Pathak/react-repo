@@ -10,6 +10,10 @@ var _react = _interopRequireDefault(require("react"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var Badge = function Badge(props) {
+  _react["default"].useEffect(function () {
+    console.log('use effect');
+  }, []);
+
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "badge ".concat(!props.value ? 'badge--none' : '', " ")
   }, /*#__PURE__*/_react["default"].createElement("h4", {
