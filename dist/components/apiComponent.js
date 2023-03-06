@@ -34,7 +34,7 @@ var url = 'https://api.nasa.gov/planetary/earth/assets?lon=100.75&lat=1.5&date=2
 var ApiComp = function ApiComp() {
   var _data$resource, _data$resource2;
 
-  var _useState = (0, _react.useState)(null),
+  var _useState = (0, _react.useState)({}),
       _useState2 = _slicedToArray(_useState, 2),
       data = _useState2[0],
       setData = _useState2[1];
