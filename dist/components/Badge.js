@@ -34,9 +34,7 @@ var Badge = function Badge(props) {
 
   return /*#__PURE__*/_react["default"].createElement("div", {
     className: "badge ".concat(!props.value ? 'badge--none' : '', " ")
-  }, /*#__PURE__*/_react["default"].createElement("h4", {
-    className: "heavy"
-  }, props.value || 0), data);
+  }, data);
 };
 
 var _default = Badge;
