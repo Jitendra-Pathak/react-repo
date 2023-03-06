@@ -32,18 +32,7 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var url = 'https://api.nasa.gov/planetary/earth/assets?lon=100.75&lat=1.5&date=2014-02-01&dim=0.15&api_key=DEMO_KEY';
 
 var ApiComp = function ApiComp() {
-  var _data$resource, _data$resource2;
-
-  var _useState = (0, _react.useState)({
-    date: '',
-    id: '',
-    resource: {
-      dataset: '',
-      planet: ''
-    },
-    service_version: '',
-    url: ''
-  }),
+  var _useState = (0, _react.useState)(null),
       _useState2 = _slicedToArray(_useState, 2),
       data = _useState2[0],
       setData = _useState2[1];
@@ -58,10 +47,10 @@ var ApiComp = function ApiComp() {
   }, []);
   return data ? /*#__PURE__*/_react["default"].createElement("div", {
     className: "apiComp"
-  }, /*#__PURE__*/_react["default"].createElement("p", null, data === null || data === void 0 ? void 0 : data.date, " @@ ", data === null || data === void 0 ? void 0 : data.id, " "), /*#__PURE__*/_react["default"].createElement("p", null, data === null || data === void 0 ? void 0 : (_data$resource = data.resource) === null || _data$resource === void 0 ? void 0 : _data$resource.dataset, " @@ ", data === null || data === void 0 ? void 0 : (_data$resource2 = data.resource) === null || _data$resource2 === void 0 ? void 0 : _data$resource2.planet, " "), /*#__PURE__*/_react["default"].createElement(_Badge["default"], {
-    value: data === null || data === void 0 ? void 0 : data.service_version
+  }, /*#__PURE__*/_react["default"].createElement("p", null, data.date, " @@ ", data.id, " "), /*#__PURE__*/_react["default"].createElement("p", null, data.resource.dataset, " @@ ", data.resource.planet, " "), /*#__PURE__*/_react["default"].createElement(_Badge["default"], {
+    value: data.service_version
   }), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("img", {
-    src: data === null || data === void 0 ? void 0 : data.url,
+    src: data.url,
     width: 200,
     height: 200
   })) : /*#__PURE__*/_react["default"].createElement("div", null, "No data");
