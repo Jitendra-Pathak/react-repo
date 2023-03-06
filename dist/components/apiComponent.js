@@ -32,9 +32,9 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 var url = 'https://api.nasa.gov/planetary/earth/assets?lon=100.75&lat=1.5&date=2014-02-01&dim=0.15&api_key=DEMO_KEY';
 
 var ApiComp = function ApiComp() {
-  var _useState = (0, _react.useState)(null),
+  var _useState = (0, _react.useState)(''),
       _useState2 = _slicedToArray(_useState, 2),
-      data = _useState2[0],
+      imgUrl = _useState2[0],
       setData = _useState2[1];
 
   (0, _react.useEffect)(function () {
@@ -42,18 +42,16 @@ var ApiComp = function ApiComp() {
       return res.json();
     }).then(function (res) {
       console.log('res is @@', res);
-      setData(res);
+      setData(res.url);
     });
   }, []);
-  return data ? /*#__PURE__*/_react["default"].createElement("div", {
+  return /*#__PURE__*/_react["default"].createElement("div", {
     className: "apiComp"
-  }, /*#__PURE__*/_react["default"].createElement("p", null, data.date, " @@ ", data.id, " "), /*#__PURE__*/_react["default"].createElement("p", null, data.resource.dataset, " @@ ", data.resource.planet, " "), /*#__PURE__*/_react["default"].createElement(_Badge["default"], {
-    value: data.service_version
-  }), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("img", {
-    src: data.url,
+  }, /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("img", {
+    src: imgUrl,
     width: 200,
     height: 200
-  })) : /*#__PURE__*/_react["default"].createElement("div", null, "No data");
+  }));
 };
 
 var _default = ApiComp;
