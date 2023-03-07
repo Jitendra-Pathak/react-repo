@@ -6,10 +6,14 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
+var _react = _interopRequireDefault(require("react"));
+
 var _Badge = require("./Badge");
 
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
 var DummyBadge = function DummyBadge() {
-  return /*#__PURE__*/React.createElement(_Badge.Badge, null);
+  return /*#__PURE__*/_react["default"].createElement(_Badge.Badge, null);
 };
 
 var _default = DummyBadge;
