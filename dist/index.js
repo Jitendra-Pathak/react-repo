@@ -21,11 +21,19 @@ Object.defineProperty(exports, "Button", {
     return _Button["default"];
   }
 });
+Object.defineProperty(exports, "DummyBadge", {
+  enumerable: true,
+  get: function get() {
+    return _DummyBadge["default"];
+  }
+});
 
 var _Badge = _interopRequireDefault(require("./components/Badge"));
 
 var _Button = _interopRequireDefault(require("./components/Button"));
 
 var _apiComponent = _interopRequireDefault(require("./components/apiComponent"));
+
+var _DummyBadge = _interopRequireDefault(require("./components/DummyBadge"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
