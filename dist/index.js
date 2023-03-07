@@ -27,6 +27,12 @@ Object.defineProperty(exports, "DummyBadge", {
     return _DummyBadge["default"];
   }
 });
+Object.defineProperty(exports, "Mapping", {
+  enumerable: true,
+  get: function get() {
+    return _mapping["default"];
+  }
+});
 
 var _Badge = _interopRequireDefault(require("./components/Badge"));
 
@@ -35,5 +41,7 @@ var _Button = _interopRequireDefault(require("./components/Button"));
 var _apiComponent = _interopRequireDefault(require("./components/apiComponent"));
 
 var _DummyBadge = _interopRequireDefault(require("./components/DummyBadge"));
+
+var _mapping = _interopRequireDefault(require("./components/widget/mapping"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
