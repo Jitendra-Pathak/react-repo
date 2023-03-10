@@ -27,6 +27,7 @@ Object.defineProperty(exports, "DummyBadge", {
     return _DummyBadge["default"];
   }
 });
+exports.MapComp = void 0;
 Object.defineProperty(exports, "Mapping", {
   enumerable: true,
   get: function get() {
@@ -45,3 +46,9 @@ var _DummyBadge = _interopRequireDefault(require("./components/DummyBadge"));
 var _mapping = _interopRequireDefault(require("./components/widget/mapping"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+
+var MapComp = {
+  'test_wdgt_v0': _Badge["default"],
+  'wdgt_badge': _DummyBadge["default"]
+};
+exports.MapComp = MapComp;
