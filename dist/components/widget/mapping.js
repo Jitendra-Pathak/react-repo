@@ -1,24 +1,12 @@
-"use strict";
+import React from 'react';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
+import { Badge } from "../Badge";
+import { DummyBadge } from "../DummyBadge";
 
-var _react = _interopRequireDefault(require("react"));
 
-var _Badge = require("../Badge");
-
-var _DummyBadge = require("../DummyBadge");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
-
-var Mapping = function Mapping() {
-  return {
-    'test_wdgt_v0': /*#__PURE__*/_react["default"].createElement(_Badge.Badge, null),
-    'wdgt_badge': /*#__PURE__*/_react["default"].createElement(_DummyBadge.DummyBadge, null)
+const Mapping = {
+    'test_wdgt_v0': <Badge />,
+    'wdgt_badge': <DummyBadge />
   };
-};
 
-var _default = Mapping;
-exports["default"] = _default;
+export default Mapping;
