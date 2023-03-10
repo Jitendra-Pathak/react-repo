@@ -1,5 +1,6 @@
-import { Badge } from "../Badge";
-import { DummyBadge } from "../DummyBadge";
+import React from 'react';
+import { Badge, DummyBadge } from "../../../src/index";
+// import { DummyBadge } from "../DummyBadge";
 
 
 const Mapping = {
