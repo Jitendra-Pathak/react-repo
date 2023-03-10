@@ -14,8 +14,8 @@ var _DummyBadge = _interopRequireDefault(require("../DummyBadge"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 var Mapping = {
-  'test_wdgt_v0': /*#__PURE__*/_react["default"].createElement(_Badge["default"], null),
-  'wdgt_badge': /*#__PURE__*/_react["default"].createElement(_DummyBadge["default"], null)
+  'test_wdgt_v0': _Badge["default"],
+  'wdgt_badge': _DummyBadge["default"]
 };
 var _default = Mapping;
 exports["default"] = _default;
