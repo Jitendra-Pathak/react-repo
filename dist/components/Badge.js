@@ -22,19 +22,46 @@ function _iterableToArrayLimit(arr, i) { var _i = arr == null ? null : typeof Sy
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var Badge = function Badge(props) {
-  var _React$useState = _react["default"].useState('default value'),
+  var _props$heading = props.heading,
+      heading = _props$heading === void 0 ? '' : _props$heading,
+      _props$subHeading = props.subHeading,
+      subHeading = _props$subHeading === void 0 ? '' : _props$subHeading,
+      _props$img = props.img,
+      img = _props$img === void 0 ? '' : _props$img,
+      _props$desc = props.desc,
+      desc = _props$desc === void 0 ? '' : _props$desc,
+      _props$title = props.title,
+      title = _props$title === void 0 ? '' : _props$title,
+      _props$videoUrl = props.videoUrl,
+      videoUrl = _props$videoUrl === void 0 ? '' : _props$videoUrl;
+
+  var _React$useState = _react["default"].useState('Default Page Title'),
       _React$useState2 = _slicedToArray(_React$useState, 2),
       data = _React$useState2[0],
       setData = _React$useState2[1];
 
   _react["default"].useEffect(function () {
     console.log('use effect');
-    setData('updated value @@@@@@@@@@@@@@@@@@@@@@@');
+    setData('updated Page Title');
   }, []);
 
   return /*#__PURE__*/_react["default"].createElement("div", {
-    className: "badge ".concat(!props.value ? 'badge--none' : '', " ")
-  }, data);
+    className: "badge "
+  }, /*#__PURE__*/_react["default"].createElement("h4", {
+    className: "heavy"
+  }, data), /*#__PURE__*/_react["default"].createElement("p", {
+    className: "title"
+  }, title), /*#__PURE__*/_react["default"].createElement("h2", null, heading, "--", subHeading), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("img", {
+    alt: "",
+    src: img
+  }), /*#__PURE__*/_react["default"].createElement("p", null, "From state##", desc), /*#__PURE__*/_react["default"].createElement("hr", null), /*#__PURE__*/_react["default"].createElement("video", {
+    width: "200",
+    height: "200",
+    controls: true
+  }, /*#__PURE__*/_react["default"].createElement("source", {
+    src: videoUrl,
+    type: "video/mp4"
+  }), "Your browser does not support the video tag."), data);
 };
 
 var _default = Badge;
