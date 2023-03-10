@@ -13,24 +13,9 @@ var _DummyBadge = require("../DummyBadge");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-// const Mapping = {
-//     'test_wdgt_v0': <Badge />,
-//     'wdgt_badge': <DummyBadge />
-//   };
-var Mapping = function Mapping(path) {
-  switch (path) {
-    case 'test_wdgt_v0':
-      return _Badge.Badge;
-      break;
-
-    case 'wdgt_badge':
-      return _DummyBadge.DummyBadge;
-      break;
-
-    default:
-      return _Badge.Badge;
-  }
+var Mapping = {
+  'test_wdgt_v0': /*#__PURE__*/_react["default"].createElement(_Badge.Badge, null),
+  'wdgt_badge': /*#__PURE__*/_react["default"].createElement(_DummyBadge.DummyBadge, null)
 };
-
 var _default = Mapping;
 exports["default"] = _default;
