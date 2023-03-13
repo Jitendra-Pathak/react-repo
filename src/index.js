@@ -8,4 +8,5 @@ const MapComp = {
     'test_wdgt_v0': Badge,
     'wdgt_badge': DummyBadge,
 }
+
 export { Badge, Button, ApiComp, DummyBadge, Mapping, MapComp };
